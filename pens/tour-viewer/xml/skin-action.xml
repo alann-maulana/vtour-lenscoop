@@ -21,7 +21,7 @@
 	<action name="share_button">
 		copy(uri_share, skin_settings.share_url);
 		set(fb_share, 'https://www.facebook.com/sharer/sharer.php?u=');
-		set(tw_share, 'https://twitter.com/intent/tweet?text=Virtual Tour 360 by EyroPano&amp;url=');
+		set(tw_share, 'https://twitter.com/intent/tweet?text=Virtual Tour 360 by LensCoop&amp;url=');
 		txtadd(uri, get(uri_share), '#', get(scene[get(xml.scene)].name) );
 		<!-- txtadd(layer[skin_title].html, get(fb_share), get(uri)); -->
 		if('%1' == 'Facebook', 

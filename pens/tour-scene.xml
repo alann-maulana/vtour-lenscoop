@@ -30,11 +30,11 @@
 	               tooltips_hotspots="true"
 	               tooltips_mapspots="false"
 	               controlbar_offset="20"
-	               share_url="http://eyropano.com/panorama-tour/Kampus-PENS/?html5=flash"
+	               share_url="http://cdn2.lenscoop.com/pens/?html5=flash"
 	               />
 
 	<!-- set optional skin logo url -->
-	<layer name="skin_logo" url="tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://eyropano.com',_blank);" />
+	<layer name="skin_logo" url="tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
 
 	<autorotate enabled="true" waittime="3.0" speed="5" />
 	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
