@@ -1,7 +1,7 @@
 <krpano>
 	<!-- Skin Actions -->
 	<action name="startup">
-		<!-- if(startscene === null, copy(startscene,scene[0].name));
+		<!--if(startscene === null, copy(startscene,scene[0].name));
 		loadscene(get(startscene), null, MERGE);
 		 set(autorotate.enabled,true); -->
 		<!-- SET HEADING -->
