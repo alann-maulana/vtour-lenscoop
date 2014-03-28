@@ -44,4 +44,24 @@
 	       css="text-align:left; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:16px;"
 	       html=""
 	       />
+
+	<!-- hotspot style predefines - black hotspot -->
+	<style name="hotspot_ani_black"
+	       url="../img/hotspot_ani_black_64x64x20.png"
+	       crop="0|0|64|64"
+	       framewidth="64" frameheight="64" frame="0" lastframe="19"
+	       onloaded="hotspot_animate();if(skin_settings.tooltips_hotspots, if(linkedscene, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); ));"
+	       tooltip=""
+	       onclick="if(linkedscene, skin_hidetooltips(); tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1)); skin_updatescroll(); );"
+	       />
+
+	<!-- hotspot style predefines - white hotspot -->
+	<style name="hotspot_ani_white"
+	       url="../img/hotspot_ani_white_64x64x20.png"
+	       crop="0|0|64|64"
+	       framewidth="64" frameheight="64" frame="0" lastframe="19"
+	       onloaded="hotspot_animate();if(skin_settings.tooltips_hotspots, if(linkedscene, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); ));"
+	       tooltip=""
+	       onclick="if(linkedscene, skin_hidetooltips(); tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1)); skin_updatescroll(); );"
+	       />
 </krpano>

@@ -8,6 +8,14 @@
 		set(heading, 0);
 	</action>
 
+	<!-- hotspot animation action -->
+	<action name="hotspot_animate">
+		inc(frame,1,get(lastframe),0);
+		mul(ypos,frame,frameheight);
+		txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight));
+		delayedcall(0.03, if(loaded, hotspot_animate() ) );
+	</action>
+
 	<!-- add button auto rotate -->
 	<action name="autorotate_btn_events">
 		switch(layer[skin_btn_rotate].crop, 64|512|64|64, 0|512|64|64);	 

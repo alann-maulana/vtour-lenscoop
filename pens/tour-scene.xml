@@ -1,14 +1,14 @@
 <krpano version="1.17" title="Kampus PENS" onstart="startup();">
 
-	<include url="tour-viewer/xml/skin-style.xml" />
-	<include url="tour-viewer/xml/toolbar-right.xml" />
-	<include url="tour-viewer/xml/skin-layout.xml" />
-	<include url="tour-viewer/xml/layout-mobile.xml" />
-	<include url="tour-viewer/xml/layout-android.xml" />
-	<include url="tour-viewer/xml/skin-event.xml" />
-	<include url="tour-viewer/xml/skin-action.xml" />
-	<include url="tour-viewer/xml/context-menu.xml" />
-	<include url="tour-viewer/xml/plugin.xml" />
+	<include url="../tour-viewer/xml/skin-style.xml" />
+	<include url="../tour-viewer/xml/toolbar-right.xml" />
+	<include url="../tour-viewer/xml/skin-layout.xml" />
+	<include url="../tour-viewer/xml/layout-mobile.xml" />
+	<include url="../tour-viewer/xml/layout-android.xml" />
+	<include url="../tour-viewer/xml/skin-event.xml" />
+	<include url="../tour-viewer/xml/skin-action.xml" />
+	<include url="../tour-viewer/xml/context-menu.xml" />
+	<include url="../tour-viewer/xml/plugin.xml" />
 	
 	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
 	<skin_settings bingmaps="false"
@@ -34,7 +34,7 @@
 	               />
 
 	<!-- set optional skin logo url -->
-	<layer name="skin_logo" url="tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
+	<layer name="skin_logo" url="../tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
 
 	<autorotate enabled="true" waittime="3.0" speed="5" />
 	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
