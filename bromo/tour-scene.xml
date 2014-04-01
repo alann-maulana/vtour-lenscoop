@@ -96,7 +96,7 @@
 
 	<scene name="scene_Left_Sunrise_Area" title="Left Sunrise Area" onstart="" thumburl="pano-images/Left_Sunrise_Area.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="6.944" vlookat="17.309" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="120.944" vlookat="17.309" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="pano-images/Left_Sunrise_Area.tiles/preview.jpg" />
 
@@ -116,9 +116,9 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.944" atv="5.309" linkedscene="scene_middle_sunrise_area" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-58.637" atv="6.994" linkedscene="scene_right_sunrise_area" />
-		<hotspot name="spot3" style="hotspot_ani_white" ath="-163.202" atv="2.208" linkedscene="scene_front_pura" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="120.944" atv="5.309" linkedscene="scene_middle_sunrise_area" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="87.637" atv="5.994" linkedscene="scene_right_sunrise_area" />
+		<hotspot name="spot3" style="hotspot_ani_white" ath="-33.202" atv="2.208" linkedscene="scene_front_pura" />
 
 	</scene>
 
@@ -146,7 +146,7 @@
 		<!-- place your scene hotspots here -->
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="107.365" atv="7.017" linkedscene="scene_left_sunrise_area" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="68.538" atv="9.614" linkedscene="scene_middle_sunrise_area" />
-		<hotspot name="spot3" style="hotspot_ani_white" ath="-183.202" atv="2.208" linkedscene="scene_front_pura" />
+		<hotspot name="spot3" style="hotspot_ani_white" ath="-188.202" atv="3.208" linkedscene="scene_front_pura" />
 
 	</scene>
 
