@@ -1,6 +1,6 @@
 <krpano version="1.17">
 	
-	<include url="skin/defaultskin.xml" />
+	<include url="../../single-viewer/skin/defaultskin.xml" />
 	
 	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
 
