@@ -2,7 +2,7 @@
 	
 	<include url="../../single-viewer/skin/defaultskin.xml" />
 	
-	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+	<view hlookat="-50" vlookat="-15" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
 
 	<preview url="index.tiles/preview.jpg" />
 
