@@ -1,4 +1,4 @@
-<krpano version="1.17" title="Balai Kota" onstart="startup();">
+<krpano version="1.17" title="Balai Pemuda" onstart="startup();">
 
 	<include url="../../tour-viewer/xml/skin-style.xml" />
 	<include url="../../tour-viewer/xml/toolbar-right.xml" />
