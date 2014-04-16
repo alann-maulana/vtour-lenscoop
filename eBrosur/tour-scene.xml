@@ -1,0 +1,417 @@
+<krpano version="1.17" title="eBrosur" onstart="startup();">
+
+	<include url="../tour-viewer/xml/skin-style.xml" />
+	<include url="../tour-viewer/xml/toolbar-right.xml" />
+	<include url="../tour-viewer/xml/skin-layout.xml" />
+	<include url="../tour-viewer/xml/layout-mobile.xml" />
+	<include url="../tour-viewer/xml/layout-android.xml" />
+	<include url="../tour-viewer/xml/skin-event.xml" />
+	<include url="../tour-viewer/xml/skin-action.xml" />
+	<include url="../tour-viewer/xml/context-menu.xml" />
+	<include url="../tour-viewer/xml/plugin.xml" />
+	
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" 
+	               thumbs_height="80" 
+	               thumbs_padding="10" 
+	               thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               share_url="http://cdn2.lenscoop.com/eBrosur/?html5=flash"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="../tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
+
+	<autorotate enabled="true" waittime="3.0" speed="5" />
+	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
+	
+	<layer 
+		name="showspot"  
+		keep="true" 
+		url="%SWFPATH%/plugins/textfield.swf" 
+		align="topcenter" 
+		html="Polygonal Spot Number" 
+		autoheight="true" 
+		background="false" 
+		css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:22px; font-style:italic;" 
+		textshadow="2" />
+	<!-- description layers -->
+	
+
+	<scene name="scene_living_room" title="Living Room" onstart="" thumburl="panos/Ruang_Tamu.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Ruang_Tamu.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/Ruang_Tamu.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/Ruang_Tamu.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/Ruang_Tamu.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/Ruang_Tamu.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<layer name="img_sofaset" url="img/sofaset.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs4" onclick="show_image('img_sofaset')">
+			<point ath="39.133123" atv="8.523313" />
+			<point ath="43.868511" atv="22.596812" />
+			<point ath="45.214923" atv="31.550687" />
+			<point ath="58.962043" atv="41.167796" />
+			<point ath="75.611972" atv="20.100358" />
+			<point ath="77.915037" atv="20.028409" />
+			<point ath="67.520733" atv="41.95432" />
+			<point ath="69.883685" atv="46.389879" />
+			<point ath="72.807363" atv="51.865693" />
+			<point ath="76.414175" atv="52.455963" />
+			<point ath="78.376658" atv="47.284274" />
+			<point ath="98.965509" atv="46.251799" />
+			<point ath="100.184334" atv="53.158711" />
+			<point ath="105.698749" atv="52.603436" />
+			<point ath="106.356831" atv="45.034674" />
+			<point ath="109.031784" atv="42.6118" />
+			<point ath="99.993492" atv="19.954214" />
+			<point ath="109.442402" atv="18.896722" />
+			<point ath="111.627173" atv="22.555212" />
+			<point ath="117.529625" atv="30.529688" />
+			<point ath="134.284236" atv="41.805753" />
+			<point ath="136.470855" atv="39.479773" />
+			<point ath="137.612438" atv="36.211561" />
+			<point ath="143.421646" atv="30.369737" />
+			<point ath="146.10963" atv="21.986755" />
+			<point ath="146.960337" atv="18.850867" />
+			<point ath="147.956056" atv="15.493902" />
+			<point ath="149.484427" atv="10.097369" />
+			<point ath="150.627851" atv="8.561424" />
+			<point ath="149.381295" atv="6.696691" />
+			<point ath="146.974389" atv="6.825548" />
+			<point ath="141.175348" atv="5.031655" />
+			<point ath="138.130282" atv="-0.071611" />
+			<point ath="135.465469" atv="-1.313985" />
+			<point ath="133.402766" atv="1.225748" />
+			<point ath="128.996171" atv="2.585637" />
+			<point ath="123.260868" atv="0.518086" />
+			<point ath="121.302704" atv="1.92247" />
+			<point ath="120.955025" atv="7.70016" />
+			<point ath="114.017903" atv="8.275225" />
+			<point ath="108.950487" atv="4.624287" />
+			<point ath="108.91947" atv="-0.637551" />
+			<point ath="99.44988" atv="-0.100439" />
+			<point ath="93.408637" atv="-2.323382" />
+			<point ath="88.901773" atv="-2.316647" />
+			<point ath="85.204838" atv="-0.378228" />
+			<point ath="75.326737" atv="-0.629893" />
+			<point ath="75.640032" atv="4.577648" />
+			<point ath="73.008616" atv="6.179334" />
+			<point ath="66.76422" atv="6.299406" />
+			<point ath="64.529612" atv="-0.334947" />
+			<point ath="61.383919" atv="1.361246" />
+			<point ath="57.162315" atv="0.374527" />
+			<point ath="55.532385" atv="2.409536" />
+			<point ath="50.62371" atv="4.631429" />
+			<point ath="43.718504" atv="2.545929" />
+		</hotspot>
+
+		<layer name="img_sofasingle" url="img/sofasingle.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs2" onclick="show_image('img_sofasingle')">
+			<point ath="-121.253692" atv="15.402901" />
+			<point ath="-137.259068" atv="25.369539" />
+			<point ath="-138.737142" atv="29.293529" />
+			<point ath="-136.53408" atv="33.820951" />
+			<point ath="-137.34339" atv="43.621761" />
+			<point ath="-139.66249" atv="48.703832" />
+			<point ath="-137.48686" atv="50.956924" />
+			<point ath="-106.652622" atv="57.641474" />
+			<point ath="-46.77839" atv="51.00584" />
+			<point ath="-29.811512" atv="44.859452" />
+			<point ath="-29.648182" atv="42.425002" />
+			<point ath="-31.564601" atv="40.623141" />
+			<point ath="-29.807156" atv="35.925027" />
+			<point ath="-30.884676" atv="28.391597" />
+			<point ath="-28.693738" atv="25.517846" />
+			<point ath="-29.65015" atv="21.808725" />
+			<point ath="-50.124116" atv="14.716685" />
+			<point ath="-61.786466" atv="18.056266" />
+			<point ath="-72.584201" atv="17.135998" />
+			<point ath="-77.951069" atv="19.693839" />
+			<point ath="-85.234806" atv="19.895039" />
+			<point ath="-91.919904" atv="16.368166" />
+			<point ath="-101.451921" atv="17.366485" />
+			<point ath="-113.04698" atv="14.383317" />
+			<point ath="-118.383983" atv="13.4246" />
+		</hotspot>
+
+		<layer name="img_door" url="img/door.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs1" onclick="show_image('img_door')">
+			<point ath="-20.341351" atv="-31.291564" />
+			<point ath="-22.389557" atv="4.555125" />
+			<point ath="-23.230597" atv="5.671894" />
+			<point ath="-23.315923" atv="9.792033" />
+			<point ath="-22.647135" atv="12.551575" />
+			<point ath="-23.296079" atv="31.349452" />
+			<point ath="-1.036587" atv="34.350128" />
+			<point ath="20.303664" atv="31.992081" />
+			<point ath="21.216344" atv="13.021612" />
+			<point ath="22.190462" atv="10.346247" />
+			<point ath="22.502081" atv="5.727344" />
+			<point ath="21.500448" atv="4.321303" />
+			<point ath="22.423936" atv="-30.855431" />
+			<point ath="1.140308" atv="-33.001182" />
+		</hotspot>
+
+		<layer name="img_pigura" url="img/pigura.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs5" onclick="show_image('img_pigura')">
+			<point ath="80.235833" atv="-27.637906" />
+			<point ath="81.139961" atv="-6.963379" />
+			<point ath="96.975045" atv="-7.59703" />
+			<point ath="95.622235" atv="-28.655917" />
+		</hotspot>
+
+		<layer name="img_lamp" url="img/lamp.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs6" onclick="show_image('img_lamp')">
+			<point ath="50.412054" atv="-47.229497" />
+			<point ath="54.519661" atv="-40.330176" />
+			<point ath="65.356753" atv="-35.347462" />
+			<point ath="75.436686" atv="-33.433286" />
+			<point ath="86.930477" atv="-33.551596" />
+			<point ath="97.661653" atv="-36.738801" />
+			<point ath="107.502074" atv="-43.598129" />
+			<point ath="110.105793" atv="-56.569638" />
+			<point ath="89.770872" atv="-66.851622" />
+			<point ath="56.457931" atv="-64.708917" />
+			<point ath="45.210219" atv="-52.899878" />
+		</hotspot>
+
+	</scene>
+
+	<scene name="scene_Family_Room_1st" title="Family Room 1st" onstart="" thumburl="panos/Ruang_Tengah_Lt_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Ruang_Tengah_Lt_1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/Ruang_Tengah_Lt_1.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/Ruang_Tengah_Lt_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/Ruang_Tengah_Lt_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/Ruang_Tengah_Lt_1.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+		<layer name="img_gebyog" url="img/gebyog.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs2" onclick="show_image('img_gebyog')">
+			<point ath="62.654889" atv="-26.30759" />
+			<point ath="162.073606" atv="-30.661219" />
+			<point ath="158.866719" atv="-27.061475" />
+			<point ath="158.905394" atv="-23.097493" />
+			<point ath="162.249272" atv="-21.880409" />
+			<point ath="161.107934" atv="-16.85983" />
+			<point ath="158.961357" atv="-16.730138" />
+			<point ath="159.835308" atv="11.109617" />
+			<point ath="156.31589" atv="11.612928" />
+			<point ath="155.550215" atv="23.374501" />
+			<point ath="115.953407" atv="33.182321" />
+			<point ath="67.969004" atv="26.524344" />
+			<point ath="67.093721" atv="12.420977" />
+			<point ath="66.102878" atv="-11.52002" />
+			<point ath="64.272677" atv="-11.936325" />
+			<point ath="63.362426" atv="-17.560273" />
+			<point ath="65.941854" atv="-18.518489" />
+			<point ath="65.506952" atv="-22.067399" />
+			<point ath="63.080742" atv="-22.922925" />
+			<point ath="62.86876" atv="-23.914585" />
+		</hotspot>
+
+		<layer name="img_tableset" url="img/tableset.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs3" onclick="show_image('img_tableset')">
+			<point ath="-506.020038" atv="1.221072" />
+			<point ath="-510.442591" atv="-0.561594" />
+			<point ath="-514.938488" atv="-0.170616" />
+			<point ath="-521.008727" atv="-2.106583" />
+			<point ath="-188.60394" atv="-2.355259" />
+			<point ath="-196.263648" atv="0.605048" />
+			<point ath="-197.447491" atv="8.217418" />
+			<point ath="-204.632789" atv="11.900091" />
+			<point ath="-204.532084" atv="25.158768" />
+			<point ath="-192.525448" atv="30.165533" />
+			<point ath="-518.5873" atv="35.121691" />
+			<point ath="-499.144504" atv="33.87636" />
+			<point ath="-500.561346" atv="15.743773" />
+			<point ath="-505.14577" atv="10.760894" />
+		</hotspot>
+
+		<layer name="img_clock" url="img/clock.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs1" onclick="show_image('img_clock')">
+			<point ath="52.444059" atv="-14.198806" />
+			<point ath="62.457413" atv="-10.644788" />
+			<point ath="63.666889" atv="18.538539" />
+			<point ath="58.80222" atv="20.365354" />
+			<point ath="59.279724" atv="26.150774" />
+			<point ath="53.692458" atv="25.612716" />
+			<point ath="47.263577" atv="21.071686" />
+			<point ath="49.418594" atv="19.547973" />
+			<point ath="49.291083" atv="-9.405616" />
+		</hotspot>
+
+		<layer name="img_floor" url="img/floor.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs8" onclick="show_image('img_floor')">
+			<point ath="15.666768" atv="29.677591" />
+			<point ath="2.02962" atv="55.098597" />
+			<point ath="73.231847" atv="43.724841" />
+			<point ath="47.611769" atv="26.741285" />
+		</hotspot>
+
+		<layer name="img_box" url="img/box.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs10" onclick="show_image('img_box')">
+			<point ath="-113.872021" atv="22.217328" />
+			<point ath="-100.838214" atv="28.43617" />
+			<point ath="-94.508535" atv="23.821204" />
+			<point ath="-94.889391" atv="16.496485" />
+			<point ath="-107.931367" atv="12.667882" />
+			<point ath="-113.742082" atv="14.887956" />
+		</hotspot>
+	</scene>
+
+	<scene name="scene_Family_Room_2nd" title="Family Room 2nd" onstart="" thumburl="panos/Ruang_Tengah_Lt_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Ruang_Tengah_Lt_2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/Ruang_Tengah_Lt_2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/Ruang_Tengah_Lt_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/Ruang_Tengah_Lt_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/Ruang_Tengah_Lt_2.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<layer name="img_door2" url="img/door2.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs1" onclick="show_image('img_door2')">
+			<point ath="-37.648002" atv="-33.04202" />
+			<point ath="36.357587" atv="-34.347958" />
+			<point ath="35.235548" atv="-32.531291" />
+			<point ath="34.499665" atv="20.035134" />
+			<point ath="30.071664" atv="21.535996" />
+			<point ath="30.071664" atv="22.915776" />
+			<point ath="18.404512" atv="24.989027" />
+			<point ath="16.435527" atv="29.785175" />
+			<point ath="-24.192032" atv="28.778892" />
+			<point ath="-25.595367" atv="20.661256" />
+			<point ath="-24.449552" atv="17.30325" />
+			<point ath="-25.847077" atv="14.672169" />
+			<point ath="-33.551781" atv="13.628796" />
+			<point ath="-35.851497" atv="-30.683366" />
+		</hotspot>
+
+		<layer name="img_buffet" url="img/buffet.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs2" onclick="show_image('img_buffet')">
+			<point ath="-137.815198" atv="16.693771" />
+			<point ath="-137.844375" atv="31.543695" />
+			<point ath="-45.656914" atv="35.327147" />
+			<point ath="-45.683376" atv="26.102084" />
+			<point ath="-45.847113" atv="20.674134" />
+			<point ath="-73.070552" atv="25.384555" />
+			<point ath="-74.1295" atv="35.618616" />
+			<point ath="-116.3145" atv="33.461576" />
+			<point ath="-116.345824" atv="22.854624" />
+			<point ath="-114.720022" atv="21.013238" />
+			<point ath="-123.009006" atv="19.621625" />
+			<point ath="-123.309949" atv="18.149374" />
+			<point ath="-128.446439" atv="16.564552" />
+			<point ath="-127.868253" atv="15.654771" />
+			<point ath="-131.857994" atv="14.485246" />
+		</hotspot>
+
+		<layer name="img_tv" url="img/tv.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs3" onclick="show_image('img_tv')">
+			<point ath="-114.291503" atv="-10.627575" />
+			<point ath="-114.807018" atv="2.006777" />
+			<point ath="-122.068259" atv="2.816031" />
+			<point ath="-123.329998" atv="19.349874" />
+			<point ath="-114.385044" atv="20.873638" />
+			<point ath="-114.355117" atv="32.293487" />
+			<point ath="-75.501564" atv="35.04184" />
+			<point ath="-74.359095" atv="22.729212" />
+			<point ath="-64.33581" atv="22.096493" />
+			<point ath="-64.495756" atv="6.760559" />
+			<point ath="-68.181053" atv="4.880169" />
+			<point ath="-72.32925" atv="4.641121" />
+			<point ath="-71.987159" atv="-9.260959" />
+		</hotspot>
+
+		<layer name="img_gebyog2" url="img/gebyog2.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs5" onclick="show_image('img_gebyog2')">
+			<point ath="-125.923662" atv="-35.0494" />
+			<point ath="-125.864775" atv="-18.350797" />
+			<point ath="-119.850759" atv="-19.206241" />
+			<point ath="-114.901063" atv="-26.966085" />
+			<point ath="-106.249579" atv="-30.244362" />
+			<point ath="-98.866422" atv="-28.855263" />
+			<point ath="-94.088789" atv="-22.787501" />
+			<point ath="-90.196705" atv="-22.347431" />
+			<point ath="-86.471375" atv="-27.549559" />
+			<point ath="-77.263104" atv="-29.933953" />
+			<point ath="-68.113032" atv="-25.826251" />
+			<point ath="-62.833671" atv="-17.612589" />
+			<point ath="-56.770955" atv="-16.287554" />
+			<point ath="-55.97316" atv="-33.598806" />
+		</hotspot>
+	</scene>
+
+	<data name="scene_living_room">
+		This is panorama image on Living Room on the first floor.[br/][br/]
+		Click on polygonal hotspot to show the description -->
+	</data>
+	<data name="scene_Family_Room_1st">
+		This is panorama image on Middle Room on the first floor.[br/][br/]
+		Click on polygonal hotspot to show the description -->
+	</data>
+	<data name="scene_Family_Room_2nd">
+		This is panorama image on Middle Room on the second floor.[br/][br/]
+		Click on polygonal hotspot to show the description -->
+	</data>
+
+	<action name="shownumspot">
+		set(layer[showspot].html, %1);
+	</action>
+</krpano>

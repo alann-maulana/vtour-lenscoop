@@ -8,6 +8,27 @@
 		set(heading, 0);
 	</action>
 
+	<action name="show_image">
+		set(layer[%1].zorder, 100); 
+		set(layer[%1].alpha, 1);
+		set(layer[%1].enabled, true);
+		tween(layer[%1].scale, 1, 0.7, easeOutQuint);
+		set(layer[%1].onclick, hide_image(%1));
+		delayedcall(0, set(events[skin_events].onmouseup, hide_image(%1, x) ));
+	</action>
+
+	<action name="hide_image">
+		tween(layer[%1].scale, 0, 1, easeOutQuint);
+		delayedcall(0.5, 
+			set(layer[%1].zorder, -100); 
+			set(layer[%1].alpha, 0);
+			set(layer[%1].enabled, false);
+		);
+		if(%2 == x, 
+			set(events[skin_events].onmouseup, null);
+		)
+	</action>
+
 	<!-- hotspot animation action -->
 	<action name="hotspot_animate">
 		inc(frame,1,get(lastframe),0);

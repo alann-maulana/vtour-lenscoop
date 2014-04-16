@@ -444,13 +444,13 @@
 			<layer 
 				name="skin_btn_rotate" 
 				style="skin_base|skin_glow|skin_tooltips" 
-				tooltip="Rotate View" 
 				crop="0|512|64|64" 
 				align="rightbottom" 
 				x="40" 
 				scale="0.7" 
 				onclick="autorotate_btn_events(); switch(autorotate.enabled);" 
-				onhover="if(autorotate.enabled, showtext(disable autorotation, hovertext),showtext(enable autorotation, hovertext));" />
+				onhover="if(autorotate.enabled, showtext(Disable Autorotation, hovertext),showtext(Enable Autorotation, hovertext));" />
+			<!-- tooltip="Rotate View" -->
 			<layer 
 				name="skin_btn_next"   
 				style="skin_base|skin_glow|skin_tooltips" 
