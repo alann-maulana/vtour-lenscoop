@@ -39,7 +39,7 @@
 	<autorotate enabled="true" waittime="3.0" speed="5" />
 	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
 	
-	<layer 
+	<!--layer 
 		name="showspot"  
 		keep="true" 
 		url="%SWFPATH%/plugins/textfield.swf" 
@@ -48,7 +48,7 @@
 		autoheight="true" 
 		background="false" 
 		css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:22px; font-style:italic;" 
-		textshadow="2" />
+		textshadow="2" /-->
 	<!-- description layers -->
 	
 
