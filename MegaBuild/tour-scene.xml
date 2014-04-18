@@ -1,0 +1,135 @@
+<krpano version="1.17" title="Megabuild and Keramika Exhibition" onstart="startup();" showerrors="true">
+
+	<include url="../tour-viewer/xml/skin-style.xml" />
+	<include url="../tour-viewer/xml/toolbar-right.xml" />
+	<include url="../tour-viewer/xml/skin-layout.xml" />
+	<include url="../tour-viewer/xml/layout-mobile.xml" />
+	<include url="../tour-viewer/xml/layout-android.xml" />
+	<include url="../tour-viewer/xml/skin-event.xml" />
+	<include url="../tour-viewer/xml/skin-action.xml" />
+	<include url="../tour-viewer/xml/context-menu.xml" />
+	<include url="../tour-viewer/xml/plugin.xml" />
+	
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" 
+	               thumbs_height="80" 
+	               thumbs_padding="10" 
+	               thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               share_url="http://cdn2.lenscoop.com/MegaBuild/?html5=flash"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="../tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
+
+	<autorotate enabled="true" waittime="3.0" speed="5" />
+	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
+
+	<scene name="scene_1" title="Spot 1" onstart="" thumburl="panos/1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/1.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_2" title="Spot 2" onstart="" thumburl="panos/2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="120" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2639" tiledimageheight="2639">
+				<cube url="panos/2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1320" tiledimageheight="1320">
+				<cube url="panos/2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="660" tiledimageheight="660">
+				<cube url="panos/2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/2.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_3" title="Spot 3" onstart="" thumburl="panos/3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-110" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/3.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/3.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<data name="scene_1">
+	The 13th Indonesia Dedicated Architecture, Interior Design &amp; Bulding Exhibition And Conference[br/]
+     17th- 20th April 2014[br/][br/]
+     Jakarta Convention Centre - Indonesia[br/][br/][br/][br/]
+		Copyright 2014 LensCoop
+	</data>
+	<data name="scene_2">
+		The 13th Indonesia Dedicated Architecture, Interior Design &amp; Bulding Exhibition And Conference[br/]
+     17th- 20th April 2014[br/][br/]
+     Jakarta Convention Centre - Indonesia[br/][br/][br/][br/]
+		Copyright 2014 LensCoop
+	</data>
+	<data name="scene_3">
+		The 13th Indonesia Dedicated Architecture, Interior Design &amp; Bulding Exhibition And Conference[br/]
+     17th- 20th April 2014[br/][br/]
+     Jakarta Convention Centre - Indonesia[br/][br/][br/][br/]
+		Copyright 2014 LensCoop
+	</data>
+</krpano>
