@@ -1,4 +1,4 @@
-<krpano version="1.17" title="Megabuild and Keramika Exhibition" onstart="startup();" showerrors="true">
+<krpano version="1.17" title="Megabuild and Keramika Exhibition" onstart="startup(); startup2(); if(1 == 1, delayedcall(120, openscene())); " showerrors="true">
 
 	<include url="../tour-viewer/xml/skin-style.xml" />
 	<include url="../tour-viewer/xml/toolbar-right.xml" />
@@ -32,6 +32,16 @@
 	               controlbar_offset="20"
 	               share_url="http://cdn2.lenscoop.com/MegaBuild/?html5=flash"
 	               />
+
+	<action name="startup2">
+		loadscene(scene_1, null, MERGE);
+	</action>
+
+	<action name="openscene">
+		oninterrupt(break);
+		skin_nextscene_loop(+1);
+		delayedcall(120, openscene());
+	</action> 
 
 	<!-- set optional skin logo url -->
 	<layer name="skin_logo" url="../tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
