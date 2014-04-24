@@ -1,0 +1,245 @@
+<krpano version="1.17" title="American Standard eBrosur" onstart="startup();">
+
+	<include url="../tour-viewer/xml/skin-style.xml" />
+	<include url="../tour-viewer/xml/toolbar-right.xml" />
+	<include url="../tour-viewer/xml/skin-layout.xml" />
+	<include url="../tour-viewer/xml/layout-mobile.xml" />
+	<include url="../tour-viewer/xml/layout-android.xml" />
+	<include url="../tour-viewer/xml/skin-event.xml" />
+	<include url="../tour-viewer/xml/skin-action.xml" />
+	<include url="../tour-viewer/xml/context-menu.xml" />
+	<include url="../tour-viewer/xml/plugin.xml" />
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+		<!-- set(autorotate.enabled,true); -->
+		<!-- SET HEADING -->
+		set(heading, 0);
+	</action>
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" 
+	               thumbs_height="80" 
+	               thumbs_padding="10" 
+	               thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               share_url="http://cdn2.lenscoop.com/AmericanStandard/?html5=flash"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="../tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
+
+	<autorotate enabled="true" waittime="3.0" speed="5" />
+	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
+	
+	<!--layer 
+		name="showspot"  
+		keep="true" 
+		url="%SWFPATH%/plugins/textfield.swf" 
+		align="topcenter" 
+		html="Polygonal Spot Number" 
+		autoheight="true" 
+		background="false" 
+		css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:22px; font-style:italic;" 
+		textshadow="2" /-->
+	<!-- description layers -->
+	
+
+	<scene name="scene_Bathroom" title="Bathroom" onstart="" thumburl="panos/Bathroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Bathroom.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/Bathroom.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/Bathroom.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/Bathroom.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/Bathroom.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<layer name="img_shower" url="img/img_shower.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs3" onclick="show_image('img_shower')">
+			<point ath="-92.978447" atv="-36.207342" />
+			<point ath="-106.290903" atv="-36.112014" />
+			<point ath="-110.383626" atv="32.385845" />
+			<point ath="-121.561384" atv="37.0423" />
+			<point ath="-128.431568" atv="45.159917" />
+			<point ath="-128.913806" atv="54.128111" />
+			<point ath="-121.768045" atv="62.258023" />
+			<point ath="-92.45236" atv="67.945767" />
+			<point ath="-67.577531" atv="62.784482" />
+			<point ath="-60.121753" atv="54.547253" />
+			<point ath="-62.671427" atv="43.216078" />
+			<point ath="-69.657641" atv="37.129998" />
+			<point ath="-78.385663" atv="33.790766" />
+			<point ath="-73.592355" atv="-34.014058" />
+			<point ath="-85.852935" atv="-36.012109" />
+			<point ath="-80.882057" atv="-38.095049" />
+			<point ath="-78.588752" atv="-42.780812" />
+			<point ath="-80.874837" atv="-47.092648" />
+			<point ath="-87.377488" atv="-49.335532" />
+			<point ath="-94.994442" atv="-49.362377" />
+			<point ath="-98.581591" atv="-45.030588" />
+			<point ath="-99.212091" atv="-40.02329" />
+		</hotspot>
+
+		<layer name="img_closet" url="img/img_closet.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs2" onclick="show_image('img_closet')">
+			<point ath="-143.506406" atv="10.046711" />
+			<point ath="-134.188846" atv="9.131605" />
+			<point ath="-132.545047" atv="12.004591" />
+			<point ath="-131.903266" atv="18.760944" />
+			<point ath="-129.362832" atv="21.207017" />
+			<point ath="-127.798757" atv="25.09564" />
+			<point ath="-128.200283" atv="28.996946" />
+			<point ath="-132.490325" atv="35.313444" />
+			<point ath="-137.158218" atv="35.645469" />
+			<point ath="-140.596946" atv="33.439887" />
+			<point ath="-144.260183" atv="20.635311" />
+		</hotspot>
+
+		<layer name="img_bathub" url="img/img_bathub.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs1" onclick="show_image('img_bathub')">
+			<point ath="76.455662" atv="19.061014" />
+			<point ath="83.45241" atv="19.534753" />
+			<point ath="83.807816" atv="12.252365" />
+			<point ath="87.597679" atv="12.086765" />
+			<point ath="91.958148" atv="15.374965" />
+			<point ath="92.274979" atv="19.361048" />
+			<point ath="102.692771" atv="18.748237" />
+			<point ath="110.827133" atv="18.743974" />
+			<point ath="117.023069" atv="20.393684" />
+			<point ath="120.211893" atv="24.535436" />
+			<point ath="121.498102" atv="31.43552" />
+			<point ath="120.857624" atv="37.65209" />
+			<point ath="117.623744" atv="43.522895" />
+			<point ath="114.921672" atv="45.156512" />
+			<point ath="67.378531" atv="46.504094" />
+			<point ath="61.452405" atv="44.392147" />
+			<point ath="58.935441" atv="42.413938" />
+			<point ath="54.062984" atv="40.541617" />
+			<point ath="56.017562" atv="35.227013" />
+			<point ath="56.072573" atv="28.061006" />
+			<point ath="57.139467" atv="23.856507" />
+			<point ath="62.599641" atv="20.291821" />
+			<point ath="67.93529" atv="19.252674" />
+			<point ath="71.976316" atv="19.120691" />
+		</hotspot>
+
+		<layer name="img_wastafel" url="img/img_wastafel.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs4" onclick="show_image('img_wastafel')">
+			<point ath="-54.587187" atv="19.370827" />
+			<point ath="-49.33768" atv="20.456003" />
+			<point ath="-44.428746" atv="20.321052" />
+			<point ath="-38.907577" atv="16.104087" />
+			<point ath="-40.324526" atv="11.641753" />
+			<point ath="-43.601716" atv="10.300159" />
+			<point ath="-43.908633" atv="7.904112" />
+			<point ath="-48.542705" atv="6.177554" />
+			<point ath="-49.455694" atv="9.386115" />
+			<point ath="-54.230458" atv="10.183772" />
+			<point ath="-57.005689" atv="11.738954" />
+			<point ath="-58.258887" atv="15.535799" />
+		</hotspot>
+
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="-173.578" atv="8.210" linkedscene="scene_bedroom" />
+
+	</scene>
+
+	<scene name="scene_Bedroom" title="Bedroom" onstart="" thumburl="panos/Bedroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Bedroom.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2608" tiledimageheight="2608">
+				<cube url="panos/Bedroom.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1304" tiledimageheight="1304">
+				<cube url="panos/Bedroom.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="652" tiledimageheight="652">
+				<cube url="panos/Bedroom.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/Bedroom.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<layer name="img_bed" url="img/img_bed.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs1" onclick="show_image('img_bed')">
+			<point ath="6.943563" atv="11.613482" />
+			<point ath="3.862915" atv="16.471357" />
+			<point ath="4.024959" atv="22.640851" />
+			<point ath="8.920763" atv="39.788351" />
+			<point ath="36.453008" atv="34.39594" />
+			<point ath="37.4433" atv="29.796739" />
+			<point ath="55.860707" atv="21.961467" />
+			<point ath="55.860707" atv="21.057624" />
+			<point ath="57.72001" atv="19.60971" />
+			<point ath="56.343003" atv="18.841057" />
+			<point ath="56.390572" atv="13.275571" />
+			<point ath="46.027464" atv="9.441609" />
+			<point ath="44.253578" atv="10.052367" />
+			<point ath="34.814417" atv="7.656126" />
+			<point ath="32.676115" atv="5.005743" />
+			<point ath="29.722054" atv="5.163709" />
+			<point ath="28.89676" atv="10.010615" />
+		</hotspot>
+
+		<layer name="img_sofa" url="img/img_sofa.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+		<hotspot name="hs2" onclick="show_image('img_sofa')">
+			<point ath="59.973912" atv="14.478325" />
+			<point ath="133.644238" atv="12.060901" />
+			<point ath="135.42474" atv="16.731688" />
+			<point ath="153.710229" atv="21.823459" />
+			<point ath="155.4098" atv="35.803373" />
+			<point ath="33.716181" atv="45.030194" />
+			<point ath="36.223979" atv="29.903669" />
+			<point ath="58.469564" atv="18.858555" />
+		</hotspot>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-163.302" atv="9.075" linkedscene="scene_bathroom" />
+
+	</scene>
+
+	<data name="scene_bathroom">
+		This is panorama image of bathroom. There are 4 polygon hotspot that show some description.[br/][br/]
+		Click on polygonal hotspot to show the description or arrow hotspot to go to another room -->[br/][br/][br/][br/]
+		Copyright 2014 LensCoop
+	</data>
+	<data name="scene_bedroom">
+		This is panorama image of bedroom. There are 2 polygon hotspot that show some description.[br/][br/]
+		Click on polygonal hotspot to show the description or arrow hotspot to go to another room -->[br/][br/][br/][br/]
+		Copyright 2014 LensCoop
+	</data>
+
+	<action name="shownumspot">
+		set(layer[showspot].html, %1);
+	</action>
+</krpano>
