@@ -1,0 +1,138 @@
+<krpano version="1.17" title="Transport Museum" onstart="startup();">
+
+	<include url="../../tour-viewer/xml/skin-style.xml" />
+	<include url="../../tour-viewer/xml/toolbar-right.xml" />
+	<include url="../../tour-viewer/xml/skin-layout.xml" />
+	<include url="../../tour-viewer/xml/layout-mobile.xml" />
+	<include url="../../tour-viewer/xml/layout-android.xml" />
+	<include url="../../tour-viewer/xml/skin-event.xml" />
+	<include url="../../tour-viewer/xml/skin-action.xml" />
+	<include url="../../tour-viewer/xml/context-menu.xml" />
+	<include url="../../tour-viewer/xml/plugin.xml" />
+	
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" 
+	               thumbs_height="80" 
+	               thumbs_padding="10" 
+	               thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               share_url="http://cdn2.lenscoop.com/TransportMuseum/All/?html5=flash"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="../../tour-viewer/img/logo.png" scale="0.9" align="righttop" x="15" y="10" zorder="100" opened_onclick="openurl('http://lenscoop.com',_blank);" />
+
+	<autorotate enabled="true" waittime="3.0" speed="5" />
+	<!--autorotate enabled="true" waittime="6.0" accel="6" speed="10" horizon="15" tofov="60" /-->
+
+	<scene name="scene_BerlinerMauer" title="Berliner Mauer" onstart="" thumburl="pano-images/BerlinerMauer.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="170" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="pano-images/BerlinerMauer.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="4608" tiledimageheight="4608">
+				<cube url="pano-images/BerlinerMauer.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2304" tiledimageheight="2304">
+				<cube url="pano-images/BerlinerMauer.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="pano-images/BerlinerMauer.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="576" tiledimageheight="576">
+				<cube url="pano-images/BerlinerMauer.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="pano-images/BerlinerMauer.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_BuckinghamPalace" title="Buckingham Palace" onstart="" thumburl="pano-images/BuckinghamPalace.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="pano-images/BuckinghamPalace.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="4571" tiledimageheight="4571">
+				<cube url="pano-images/BuckinghamPalace.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2286" tiledimageheight="2286">
+				<cube url="pano-images/BuckinghamPalace.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1143" tiledimageheight="1143">
+				<cube url="pano-images/BuckinghamPalace.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="pano-images/BuckinghamPalace.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="pano-images/BuckinghamPalace.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_LaTourEiffel" title="La Tour Eiffel" onstart="" thumburl="pano-images/LaTourEiffel.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-50" vlookat="-15" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="pano-images/LaTourEiffel.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="4587" tiledimageheight="4587">
+				<cube url="pano-images/LaTourEiffel.tiles/%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2294" tiledimageheight="2294">
+				<cube url="pano-images/LaTourEiffel.tiles/%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1147" tiledimageheight="1147">
+				<cube url="pano-images/LaTourEiffel.tiles/%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="pano-images/LaTourEiffel.tiles/%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="pano-images/LaTourEiffel.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<data name="scene_BerlinerMauer">
+		Berikut ini merupakan image panorama dari Tembok Berlin, Jerman pada Museum Angkut yang terletak di kota Batu, Malang, Jawa Timur.[br/][br/]
+	</data>
+
+	<data name="scene_BuckinghamPalace">
+		Berikut ini merupakan image panorama dari Istana Buckingham, Inggris pada Museum Angkut yang terletak di kota Batu, Malang, Jawa Timur.[br/][br/]
+	</data>
+
+	<data name="scene_LaTourEiffel">
+		Berikut ini merupakan image panorama dari Menara Eiffel, Perancis pada Museum Angkut yang terletak di kota Batu, Malang, Jawa Timur.[br/][br/]
+	</data>
+
+</krpano>
