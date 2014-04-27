@@ -3,7 +3,9 @@
 	<!-- plugin editor -->
 	<!--plugin name="editor"  url="%SWFPATH%/plugins/editor.swf" keep="true"  /-->
 	<!--plugin name="options" url="%SWFPATH%/plugins/options.swf" keep="true" view="true" display="true" control="false" image="true" onloaded="open();" /-->
-
+	<include url="%SWFPATH%/xml/progress_loadinganimation.xml?nocache=%$random%" />
+	<include url="%SWFPATH%/xml/progress_loadingpercent.xml?nocache=%$random%" />
+	<include url="%SWFPATH%/xml/progress_loadingbar.xml?nocache=%$random%" />
 	<!-- the skin -->
 	<include url="skin/defaultskin.xml" />
 	
