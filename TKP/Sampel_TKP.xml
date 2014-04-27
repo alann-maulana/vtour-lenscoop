@@ -22,7 +22,7 @@
 		</mobile>
 	</image>
 
-	<layer name="img_Bukti3" url="img/Bukti3.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<layer name="img_Bukti3" url="img/Bukti3.JPG" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
 	<hotspot name="hs3" onclick="show_image('img_Bukti3')">
 		<point ath="-110.750822" atv="46.757161" />
 		<point ath="-108.167858" atv="50.40961" />
@@ -35,7 +35,7 @@
 		<point ath="-107.99152" atv="44.412823" />
 	</hotspot>
 
-	<layer name="img_Bukti2" url="img/Bukti2.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<layer name="img_Bukti2" url="img/Bukti2.JPG" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
 	<hotspot name="hs2" onclick="show_image('img_Bukti2')">
 		<point ath="160.552097" atv="38.482914" />
 		<point ath="157.864124" atv="41.904057" />
@@ -83,7 +83,7 @@
 		<point ath="-171.340342" atv="30.064406" />
 	</hotspot>
 
-	<layer name="img_Bukti4" url="img/Bukti4.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<layer name="img_Bukti4" url="img/Bukti4.JPG" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
 	<hotspot name="hs4" onclick="show_image('img_Bukti4')">
 		<point ath="136.820468" atv="50.627202" />
 		<point ath="137.271968" atv="56.658953" />
