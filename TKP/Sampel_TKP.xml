@@ -7,7 +7,7 @@
 	<!--include url="%SWFPATH%/xml/progress_loadingpercent.xml?nocache=%$random%" /-->
 	<include url="%SWFPATH%/xml/progress_loadingbar.xml?nocache=%$random%" />
 	<!-- the skin -->
-	<include url="skin/defaultskin.xml" />
+	<include url="%SWFPATH%/skin/defaultskin.xml" />
 	
 	<!-- view settings -->
 	<view hlookat="-152.81" vlookat="48.11" maxpixelzoom="1.0" fovmax="100" limitview="auto" />
