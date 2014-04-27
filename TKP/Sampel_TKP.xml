@@ -1,0 +1,123 @@
+<krpano version="1.17">
+	
+	<!-- plugin editor -->
+	<!--plugin name="editor"  url="%SWFPATH%/plugins/editor.swf" keep="true"  /-->
+	<!--plugin name="options" url="%SWFPATH%/plugins/options.swf" keep="true" view="true" display="true" control="false" image="true" onloaded="open();" /-->
+
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="-152.81" vlookat="48.11" maxpixelzoom="1.0" fovmax="100" limitview="auto" />
+	
+
+	<preview url="Sampel_TKP.tiles/preview.jpg" />
+
+	<image>
+		<cube url="Sampel_TKP.tiles/pano_%s.jpg" />
+		<mobile>
+			<cube url="Sampel_TKP.tiles/mobile_%s.jpg" />
+		</mobile>
+	</image>
+
+	<layer name="img_Bukti3" url="img/Bukti3.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<hotspot name="hs3" onclick="show_image('img_Bukti3')">
+		<point ath="-110.750822" atv="46.757161" />
+		<point ath="-108.167858" atv="50.40961" />
+		<point ath="-100.480866" atv="52.131095" />
+		<point ath="-94.377379" atv="50.075226" />
+		<point ath="-96.552774" atv="46.376948" />
+		<point ath="-99.614232" atv="44.755703" />
+		<point ath="-100.784331" atv="40.741627" />
+		<point ath="-107.548404" atv="40.968531" />
+		<point ath="-107.99152" atv="44.412823" />
+	</hotspot>
+
+	<layer name="img_Bukti2" url="img/Bukti2.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<hotspot name="hs2" onclick="show_image('img_Bukti2')">
+		<point ath="160.552097" atv="38.482914" />
+		<point ath="157.864124" atv="41.904057" />
+		<point ath="159.670552" atv="45.988847" />
+		<point ath="171.168294" atv="48.939597" />
+		<point ath="179.851304" atv="52.007803" />
+		<point ath="-163.302778" atv="59.873003" />
+		<point ath="-149.133979" atv="61.125074" />
+		<point ath="-140.669732" atv="63.371113" />
+		<point ath="-133.187814" atv="61.98299" />
+		<point ath="-131.385956" atv="58.359089" />
+		<point ath="-136.237525" atv="54.00407" />
+		<point ath="-146.285976" atv="53.249941" />
+		<point ath="-153.978295" atv="52.709744" />
+		<point ath="-145.775502" atv="50.078804" />
+		<point ath="-149.756811" atv="43.006888" />
+		<point ath="-153.784309" atv="45.63031" />
+		<point ath="-157.571928" atv="46.704281" />
+		<point ath="-156.802064" atv="41.987921" />
+		<point ath="-160.430424" atv="37.651125" />
+		<point ath="-169.962821" atv="39.638461" />
+		<point ath="-178.994706" atv="39.280542" />
+		<point ath="174.944877" atv="36.847692" />
+		<point ath="176.96893" atv="33.699721" />
+		<point ath="177.572423" atv="29.183743" />
+		<point ath="174.746429" atv="26.899169" />
+		<point ath="171.156103" atv="27.537858" />
+		<point ath="170.071171" atv="31.402708" />
+		<point ath="168.182909" atv="33.507755" />
+		<point ath="164.06821" atv="32.091442" />
+		<point ath="159.235915" atv="33.261908" />
+		<point ath="157.198987" atv="36.732802" />
+	</hotspot>
+
+	<layer name="img_Bukti1" url="img/Bukti1.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<hotspot name="hs1" onclick="show_image('img_Bukti1')">
+		<point ath="-178.124108" atv="29.813107" />
+		<point ath="178.85896" atv="32.547486" />
+		<point ath="175.888091" atv="36.392053" />
+		<point ath="179.69869" atv="38.661138" />
+		<point ath="-171.962376" atv="39.390796" />
+		<point ath="-163.643748" atv="38.224687" />
+		<point ath="-161.385484" atv="34.385743" />
+		<point ath="-164.551308" atv="31.183548" />
+		<point ath="-171.340342" atv="30.064406" />
+	</hotspot>
+
+	<layer name="img_Bukti4" url="img/Bukti4.jpg" scale="1" align="center" zorder="-100" alpha="0" enabled="false" />
+	<hotspot name="hs4" onclick="show_image('img_Bukti4')">
+		<point ath="136.820468" atv="50.627202" />
+		<point ath="137.271968" atv="56.658953" />
+		<point ath="143.53557" atv="57.111475" />
+		<point ath="137.054894" atv="60.108515" />
+		<point ath="133.426155" atv="63.963736" />
+		<point ath="140.330453" atv="68.23435" />
+		<point ath="151.580987" atv="67.986654" />
+		<point ath="160.206968" atv="64.482276" />
+		<point ath="160.403204" atv="60.025292" />
+		<point ath="152.056554" atv="58.633402" />
+		<point ath="156.834176" atv="54.431197" />
+		<point ath="152.795846" atv="50.738647" />
+		<point ath="147.934799" atv="50.65136" />
+		<point ath="145.999136" atv="49.043236" />
+	</hotspot>
+
+	<action name="show_image">
+		set(layer[%1].zorder, 100); 
+		set(layer[%1].alpha, 1);
+		set(layer[%1].enabled, true);
+		tween(layer[%1].scale, 1, 0.7, easeOutQuint);
+		set(layer[%1].onclick, hide_image(%1));
+		delayedcall(0, set(events[skin_events].onmouseup, hide_image(%1, x) ));
+	</action>
+
+	<action name="hide_image">
+		tween(layer[%1].scale, 0, 1, easeOutQuint);
+		delayedcall(0.5, 
+			set(layer[%1].zorder, -100); 
+			set(layer[%1].alpha, 0);
+			set(layer[%1].enabled, false);
+		);
+		if(%2 == x, 
+			set(events[skin_events].onmouseup, null);
+		)
+	</action>
+
+</krpano>
