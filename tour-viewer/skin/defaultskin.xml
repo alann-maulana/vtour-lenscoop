@@ -2,7 +2,7 @@
 	<!-- krpano 1.17 default buttons skin -->
 
 	<!-- default mouse control mode (moveto or drag2d) -->
-	<control mousetype="moveto" />
+	<control mousetype="moveto" touchtype="moveto" />
 
 	<!-- default autorotate settings (disabled by default) -->
 	<autorotate enabled="false" waittime="1.0" accel="2.0" speed="8.0" horizon="0.0" tofov="90.0" />
