@@ -1,0 +1,30 @@
+<krpano version="1.17">
+	
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+	
+
+	<preview url="Resto.tiles/preview.jpg" />
+
+	<image type="CUBE" multires="true" tilesize="512" progressive="false">
+		<level tiledimagewidth="4575" tiledimageheight="4575">
+			<cube url="Resto.tiles/mres_%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+		</level>
+		<level tiledimagewidth="2288" tiledimageheight="2288">
+			<cube url="Resto.tiles/mres_%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+		</level>
+		<level tiledimagewidth="1144" tiledimageheight="1144">
+			<cube url="Resto.tiles/mres_%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+		</level>
+		<level tiledimagewidth="512" tiledimageheight="512">
+			<cube url="Resto.tiles/mres_%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+		</level>
+		<mobile>
+			<cube url="Resto.tiles/mobile_%s.jpg" />
+		</mobile>
+	</image>
+
+</krpano>
