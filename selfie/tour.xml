@@ -1,4 +1,4 @@
-<krpano version="1.17" title="Virtual Tour" onstart="startup();">
+<krpano version="1.17" title="Selfie Panorama" onstart="startup();">
 
 	<include url="skin/vtourskin.xml" />
 
