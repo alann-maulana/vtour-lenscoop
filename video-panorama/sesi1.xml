@@ -31,7 +31,7 @@
 	         url="plugins/videoplayer.swf"
 	         alturl="plugins/videoplayer.js"
 	         videourl="video.mp4|video.webm"
-	         posterurl="picture.jpg"
+	         posterurl="picture.png"
 	         distorted="true"
 	         ath="-132"
 	         atv="-12"
