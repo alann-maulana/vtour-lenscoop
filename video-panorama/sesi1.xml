@@ -1,0 +1,51 @@
+<krpano version="1.18">
+	
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="-130" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+	
+
+	<preview url="sesi1.tiles/preview.jpg" />
+
+	<image type="CUBE" multires="true" tilesize="512">
+		<level tiledimagewidth="4544" tiledimageheight="4544">
+			<cube url="sesi1.tiles/mres_%s/l4/%0v/l4_%s_%0v_%0h.jpg" />
+		</level>
+		<level tiledimagewidth="2272" tiledimageheight="2272">
+			<cube url="sesi1.tiles/mres_%s/l3/%0v/l3_%s_%0v_%0h.jpg" />
+		</level>
+		<level tiledimagewidth="1136" tiledimageheight="1136">
+			<cube url="sesi1.tiles/mres_%s/l2/%0v/l2_%s_%0v_%0h.jpg" />
+		</level>
+		<level tiledimagewidth="512" tiledimageheight="512">
+			<cube url="sesi1.tiles/mres_%s/l1/%0v/l1_%s_%0v_%0h.jpg" />
+		</level>
+		<mobile>
+			<cube url="sesi1.tiles/mobile_%s.jpg" />
+		</mobile>
+	</image>
+
+	<hotspot name="videospot"
+	         url="plugins/videoplayer.swf"
+	         alturl="plugins/videoplayer.js"
+	         videourl="video.mp4|video.webm"
+	         posterurl="picture.jpg"
+	         distorted="true"
+	         ath="-132"
+	         atv="-12"
+	         edge="center"
+	         scale="1.0"
+	         rx="0"
+	         ry="0"
+	         rz="0"
+	         loop="true"
+	         pausedonstart="true"
+	         directionalsound="true"
+	         range="200"
+	         volume="0.7"
+	         onclick="togglepause();"
+	         />
+
+</krpano>
