@@ -38,7 +38,7 @@
 	         ry="0"
 	         rz="0"
 	         loop="true"
-	         pausedonstart="true"
+	         pausedonstart="false"
 	         directionalsound="true"
 	         range="200"
 	         volume="0.7"
