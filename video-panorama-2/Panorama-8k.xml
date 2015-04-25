@@ -1,0 +1,48 @@
+<krpano version="1.18">
+	
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+	
+
+	<preview url="Panorama-8k.tiles/preview.jpg" />
+
+	<image type="CUBE" multires="true" tilesize="512">
+		<level tiledimagewidth="2608" tiledimageheight="2608">
+			<cube url="Panorama-8k.tiles/mres_%s/l3/%v/l3_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="1304" tiledimageheight="1304">
+			<cube url="Panorama-8k.tiles/mres_%s/l2/%v/l2_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="652" tiledimageheight="652">
+			<cube url="Panorama-8k.tiles/mres_%s/l1/%v/l1_%s_%v_%h.jpg" />
+		</level>
+		<mobile>
+			<cube url="Panorama-8k.tiles/mobile_%s.jpg" />
+		</mobile>
+	</image>
+
+	<hotspot name="videospot"
+	         url="plugins/videoplayer.swf"
+	         alturl="plugins/videoplayer.js"
+	         videourl="video.mp4|video.webm"
+	         posterurl="picture.png"
+	         distorted="true"
+	         ath="-4.5"
+	         atv="-12"
+	         edge="center"
+	         scale="1.0"
+	         rx="0"
+	         ry="0"
+	         rz="0"
+	         loop="true"
+	         pausedonstart="true"
+	         directionalsound="true"
+	         range="200"
+	         volume="0.7"
+	         onclick="togglepause();"
+	         />
+
+</krpano>
